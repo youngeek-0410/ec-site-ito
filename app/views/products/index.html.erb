@@ -1,0 +1,9 @@
+<ul>
+  <% @products.each do |product| %>
+    <li>
+      <%= image_tag product.image_path %>
+      <%= product.name %>
+      <%= product.price.to_s + "円（税込み）"%>
+    </li>
+  <% end %>
+</ul>
